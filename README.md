@@ -8,7 +8,7 @@
 4. Open the project folder in **VS code** 
 5. Open terminal (shortcut: **ctrl+`**)
 6. Run the following command: `> npm install`\
-Now the project packages installed in  **node_nodules** folder. 
+The project packages are now installed in the **node_nodules** folder. 
 7. Run the following command: `> npm start`\
 Now your project is running at http://localhost:8080/. \
 Use this command to run the project next time.
