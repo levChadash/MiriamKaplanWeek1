@@ -1,0 +1,73 @@
+
+td,th,input,button{
+    padding: 20px 21px;
+  
+    border: 1px solid rgb(71, 8, 13);
+    text-align: center;
+    font-size: 13px;
+    font-weight: 500;
+    padding: 6px 0px;
+    background-color:rgb(235, 198, 219);
+    font-family: 'azo-sans', sans-serif;
+    font-style: italic;
+
+    text-transform: uppercase;
+  
+    text-decoration-color:rgb(71, 8, 13);
+    width: 200px;
+
+}
+input{
+    width: 200px;
+    height: 25px;
+    border: none;
+    border: 1px solid rgb(71, 8, 13);
+    
+}
+
+tr:hover {background-color:rgb(50, 47, 45);}
+button:hover{
+     border: 1px solid rgb(71, 8, 13);;
+}
+body{
+padding-left: 17%;
+
+/*background: url(p.jpg);*/
+
+background-image: url("pexels-thirdman-5862308.jpg");
+background-position:10px 200px; 
+background-position:0% 25%,20%,100%;  
+background-size:cover;
+
+}
+
+#cistGroup{
+    overflow-x:auto
+}
+h1 {
+    padding-left: 13%;
+    font-optical-sizing: 500Px;
+    color: rgb(21, 18, 18);
+    margin: rgb(190, 35, 61);
+    size: 500px;
+    text-shadow: 2px 7px 5px rgb(190, 35, 61);;
+  }
+  .glyphicon{
+      background: none;
+      border: none;
+  }
+.btn{
+min-width: auto;
+margin-top: 3%;
+
+    
+}
+.btnI{
+    width: 27%;
+    height: 50px;
+}
+.bt{
+    margin-left: 17%;
+    margin-top:18% ;
+
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link href="reports.css" rel="stylesheet" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <template id="report-row">
+        <ul class="item-row">
+            <li class="list">
+                <p class="StartDate" id="StartDate">-</p>
+                <p class="EndDate" id="EndDate">|</p>
+                <p class="Location" id="Location"></p>
+            </li>
+        </ul>
+    </template>
+
+</head>
+
+<body>
+    <h1>Epidemiology Report</h1>
+    <input type="search text" id="rsearch" name="rsearch" placeholder="City"   >
+
+    <div id="listBox">
+        <ul id="list">
+
+        </ul>
+    </div>
+    <div>
+        <button class="btn" onclick="document.location.href ='reports.html'">Report</button>
+        <button class="btn" onclick="document.location.href ='index.html'">home page</button>
+    </div>
+   
+</body>
+    <script type="text/javascript" src='../script/viewReport.js'></script>
+</html>

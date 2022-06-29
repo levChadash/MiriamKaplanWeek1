@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html id="page">
+
+<head>
+    <title>Report Your Path</title>
+    <link href="reports.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">   
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <template id="temp-row">
+        <tr class="item-row">
+            <td class="startDate" id="startDate"></td>
+            <td class="endDate" id="endDate"></td>
+            <td class="city" id="city"></td>
+            <td class="location" id="location"></div></td>
+            <td class="deleteReport"><div><a href="#" title="delete" class="fa fa-trash" id="deleteReport"></a></div></td>
+        </tr>
+    </template>
+ 
+</head>
+
+<body>
+    <h1>Report Your Path</h1>
+<input id="id" type="text"   placeholder="Patient Id"  ></body>
+<br>
+<br>
+    <div class="cistGroup" id='cistGroup' hidden="true">
+        <table id="repotsTable" class="repotsTable">
+            <thead>
+                <tr>
+                    <th >Start Date</th>
+                    <th>End Date</th>
+                    <th> City</th>
+                    <th> Location</th>
+                    <th > Delete</th>
+                </tr>
+            </thead>
+            <tbody id="reports">
+      
+            </tbody>
+            <tr>
+                <td><input type="datetime-local" id="sDate"></td>
+                <td ><input type="datetime-local" id="eDate"></td>
+                <td><input type="text" id="Icity"></td>
+                <td><input type="text" id="Ilocation"></td>
+                <td><button  id="Add" class="glyphicon glyphicon-thumbs-up"></button> </td>
+                
+            </tr>
+        </table>
+        
+    
+
+    </div>
+    <div>
+        <button class="btn" onclick="document.location.href ='viewReport.html'">view Reports</button>
+        <button class="btn" onclick="document.location.href ='index.html'">home page</button>
+    </div>
+    
+    <script  type="text/javascript" src="../script/reports.js"></script>
+   
+    
+</body>
+
+</html>
