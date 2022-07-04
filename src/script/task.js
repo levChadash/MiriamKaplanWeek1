@@ -1,21 +1,42 @@
   let myPromise = new Promise(function(myResolve, myReject) {
-    setTimeout(function() { myResolve(); }, 3000);
+    setTimeout(()=> { myResolve(Math.random()*10); }, 3000);
   });
   
-  myPromise.then(function() {
-    return Math.random()*10;
+  myPromise.then(res=> {
+      console.log(res);
+    
   });
-   function setUpper(array){
-    const upper = arr.map(element => {
-        return element.toUpperCase();
-      })
-      return upper;
-   }
-  
-  function myFunction(array) {
-      
-    return Promise.resolve(setUpper(array));
+
+
+  function checkString(el) {
+    return(typeof el == "string");
+    
   }
-  myFunction.then(
-    function(value){return value.sort();}
-  );
+
+  let setArray = (input) => {
+    return new Promise((resolve, reject) => {
+        
+        if(input.every(checkString)) {
+            const upper = input.map(element => {
+                return element.toUpperCase();
+              })
+          resolve(upper);
+        }
+        reject("Sorry,not all string");
+      }
+    );
+  }
+  
+  
+  let sortTheArray = (result) => {
+    return new Promise((resolve, reject) => {
+    
+          resolve(result.sort());
+        }
+    );
+  }
+  arr=["kjk","kjhk",122];
+  setArray(arr)
+  .then(result      => sortTheArray(result))
+  .then(result      => console.log(result))
+  .catch(fromReject => console.log(fromReject));
